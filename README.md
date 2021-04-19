@@ -379,32 +379,3 @@ plt.barh(words, counts, color=colors)
     
 ![png](output_14_1.png)
     
-
-
-
-```python
-
-```
-
-
-
-
-    ['data',
-     'doses',
-     'pfizer',
-     'dose',
-     'risk',
-     'trial',
-     'moderna',
-     'flu',
-     'mrna',
-     'government']
-
-
-
-
-
-
-```python
-
-```
