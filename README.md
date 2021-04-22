@@ -439,7 +439,7 @@ plt.show()
     
 
 
-Reddit sentimental analysis about Pfizer/BionTech vaccine
+Reddit sentimenta analysis about Pfizer/BionTech vaccine
 
 
 ```python
@@ -489,7 +489,7 @@ print(str(positive.shape[0]/(reddit_sentimental_analysis_df.shape[0])*100) + " %
     
 
 
-Twitter sentimental analysis about COVID-19 vaccine
+Twitter sentimenta analysis about COVID-19 vaccine
 
 
 ```python
@@ -538,7 +538,7 @@ print(str(positive.shape[0]/(twitter_sentimental_analysis_df.shape[0])*100) + " 
     
 
 
-Sentimental analysis about Pfizer/BioNTech tweets
+Pfizer/BioNTech Vaccine Sentiment Analysis - Twitter
 
 
 ```python
@@ -587,7 +587,7 @@ print(str(positive.shape[0]/(twitter_sentimental_analysis_df.shape[0])*100) + " 
     
 
 
-Sentimental analysis about Pfizer/BioNTech Reddit post
+Pfizer/BioNTech Vaccine Sentiment Analysis - Posts on Reddit
 
 
 ```python
@@ -615,7 +615,7 @@ reddit_sentimental_analysis_df['Score'] = reddit_sentimental_analysis_df['Polari
 labels = reddit_sentimental_analysis_df.groupby('Score').count().index.values
 values = reddit_sentimental_analysis_df.groupby('Score').size().values
 plt.bar(labels, values, color = ['tab:olive', 'tab:orange', 'tab:purple'])
-plt.title(label = "Vaccine Sentiment Analysis - Reddit", 
+plt.title(label = "Pfizer/BioNTech Vaccine Sentiment Analysis - Posts on Reddit", 
                   fontsize = '15')
 #calculates percentage of positive, negative, and neutral tweets
 positive = reddit_sentimental_analysis_df[reddit_sentimental_analysis_df['Score'] == 'Positive']
